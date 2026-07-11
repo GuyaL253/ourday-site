@@ -141,11 +141,16 @@
       overflow-x: auto; padding: 8px 4px 20px; -webkit-overflow-scrolling: touch;
       scroll-snap-type: x mandatory;
     }
+    .shot-fig { flex: none; scroll-snap-align: center; margin: 0; }
     .shot {
-      flex: none; width: min(300px, 78vw); scroll-snap-align: center;
+      display: block; width: min(300px, 78vw);
       border-radius: 22px; border: 1px solid var(--line);
       box-shadow: 0 14px 34px rgba(58,42,32,0.10);
       height: auto;
+    }
+    .shot-fig figcaption {
+      text-align: center; font-size: 13.5px; color: var(--brown-soft);
+      margin-top: 12px; font-weight: 600;
     }
 
     /* Why */
@@ -222,6 +227,10 @@
     .foot a { color: var(--brown-soft); text-decoration: none; font-size: 14px; }
     .foot a:hover { color: var(--brown); }
     .foot .copy { color: var(--brown-soft); font-size: 13px; }
+    .foot-tagline {
+      width: 100%; text-align: center; color: var(--brown-soft);
+      font-size: 13.5px; margin-bottom: 14px;
+    }
   </style>
 </head>
 <body>
@@ -263,12 +272,12 @@
           <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
         </svg>
         <span class="txt">
-          <span class="small">הורדה חינם ב־</span>
+          <span class="small">הורדה חינם</span>
           <span class="big">App Store</span>
         </span>
       </a>
       <p class="hero-note">
-        זמין ל-iPhone<span class="dot">·</span>חינם להורדה<span class="dot">·</span>ללא פרסומות
+        זמין ל־iPhone<span class="dot">·</span>חינם<span class="dot">·</span>ללא פרסומות
       </p>
     </div>
   </section>
@@ -325,18 +334,36 @@
         <p>עיצוב נקי ורגוע, שנעים לפתוח גם בפעם המאה.</p>
       </div>
       <div class="screens-row">
-        <img class="shot" src="assets/screenshot-home.png" width="719" height="1560"
-             alt="מסך הבית של Our Day — ספירה לאחור לחתונה, לוח RSVP ותמונת הזוג" loading="eager">
-        <img class="shot" src="assets/screenshot-guests.png" width="719" height="1560"
-             alt="מסך המוזמנים — רשימת אורחים עם סטטוס הגעה לכל אורח" loading="lazy">
-        <img class="shot" src="assets/screenshot-seating.png" width="719" height="1560"
-             alt="מסך השולחנות — סידורי הושבה עם שיבוץ אורחים לשולחנות" loading="lazy">
-        <img class="shot" src="assets/screenshot-vendors.png" width="719" height="1560"
-             alt="מסך ספקים ותקציב — מעקב תשלומים, יתרה לתשלום ומצב התקציב" loading="lazy">
-        <img class="shot" src="assets/screenshot-analytics.png" width="719" height="1560"
-             alt="מסך ניתוח נתונים — גרפים וסיכומי אישורי הגעה של האורחים" loading="lazy">
-        <img class="shot" src="assets/screenshot-timeline.png" width="719" height="1560"
-             alt="מסך לו״ז יום החתונה באפליקציית Our Day" loading="lazy">
+        <figure class="shot-fig">
+          <img class="shot" src="assets/screenshot-home.png" width="719" height="1560"
+               alt="מסך הבית של Our Day — ספירה לאחור לחתונה, לוח RSVP ותמונת הזוג" loading="eager">
+          <figcaption>מסך הבית — ספירה לאחור ותמונת מצב</figcaption>
+        </figure>
+        <figure class="shot-fig">
+          <img class="shot" src="assets/screenshot-guests.png" width="719" height="1560"
+               alt="מסך המוזמנים — רשימת אורחים עם סטטוס הגעה לכל אורח" loading="lazy">
+          <figcaption>מוזמנים ואישורי הגעה</figcaption>
+        </figure>
+        <figure class="shot-fig">
+          <img class="shot" src="assets/screenshot-seating.png" width="719" height="1560"
+               alt="מסך השולחנות — סידורי הושבה עם שיבוץ אורחים לשולחנות" loading="lazy">
+          <figcaption>סידורי הושבה ושולחנות</figcaption>
+        </figure>
+        <figure class="shot-fig">
+          <img class="shot" src="assets/screenshot-vendors.png" width="719" height="1560"
+               alt="מסך ספקים ותקציב — מעקב תשלומים, יתרה לתשלום ומצב התקציב" loading="lazy">
+          <figcaption>ספקים, תשלומים ותקציב</figcaption>
+        </figure>
+        <figure class="shot-fig">
+          <img class="shot" src="assets/screenshot-analytics.png" width="719" height="1560"
+               alt="מסך ניתוח נתונים — גרפים וסיכומי אישורי הגעה של האורחים" loading="lazy">
+          <figcaption>ניתוח נתונים והתקדמות</figcaption>
+        </figure>
+        <figure class="shot-fig">
+          <img class="shot" src="assets/screenshot-timeline.png" width="719" height="1560"
+               alt="מסך לו״ז יום החתונה באפליקציית Our Day" loading="lazy">
+          <figcaption>לו״ז יום החתונה</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -440,13 +467,13 @@
     <div class="wrap">
       <div class="flourish"></div>
       <h2>היום הגדול מתקרב. תתחילו לתכנן בראש שקט.</h2>
-      <p>הורידו את Our Day והתחילו עם צ׳קליסט מוכן של 43 משימות.</p>
+      <p>הורידו את Our Day והתחילו לתכנן בראש שקט — עם צ׳קליסט מוכן לחתונה ישראלית.</p>
       <a class="store-btn" href="https://apps.apple.com/il/app/our-day/id6779339041" aria-label="הורדת Our Day מה-App Store">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
         </svg>
         <span class="txt">
-          <span class="small">הורדה חינם ב־</span>
+          <span class="small">הורדה חינם</span>
           <span class="big">App Store</span>
         </span>
       </a>
@@ -457,6 +484,7 @@
 <!-- 9. Footer -->
 <footer>
   <div class="wrap foot">
+    <p class="foot-tagline">Our Day · אפליקציית תכנון חתונה בעברית</p>
     <span class="copy">© 2026 Our Day · ourday.co.il</span>
     <nav class="foot-links" aria-label="קישורים משפטיים">
       <a href="privacy.html">מדיניות פרטיות</a>
