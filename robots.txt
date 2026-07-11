@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ourday.co.il/sitemap.xml
