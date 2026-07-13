@@ -28,11 +28,12 @@
       --card: #ffffff;
       --ink: #3a2a20;
       --brown: #5c4033;
-      --brown-soft: #8a6a58;
+      --brown-soft: #836554;
       --rose: #c98a8a;
-      --rose-deep: #b06a6f;
+      --rose-deep: #934e53;
       --rose-tint: #f7e9e7;
-      --gold: #c9a24b;
+      --gold: #c9a24b;          /* decorative only (flourish line, borders, dots) */
+      --gold-text: #8a6c29;     /* gold for text/symbols — meets 4.5:1 on white/cream */
       --gold-soft: #e8d5a8;
       --line: #eadfd6;
       --radius: 20px;
@@ -161,7 +162,7 @@
       background: var(--card); border: 1px solid var(--line);
     }
     .why .num {
-      font-size: 15px; font-weight: 700; color: var(--gold);
+      font-size: 15px; font-weight: 700; color: var(--gold-text);
       border: 1px solid var(--gold-soft); border-radius: 999px;
       width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center;
       margin-bottom: 12px;
@@ -194,7 +195,7 @@
       list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;
     }
     summary::-webkit-details-marker { display: none; }
-    summary::after { content: "+"; color: var(--gold); font-size: 20px; font-weight: 400; flex: none; }
+    summary::after { content: "+"; color: var(--gold-text); font-size: 20px; font-weight: 400; flex: none; }
     details[open] summary::after { content: "–"; }
     details p { color: var(--brown-soft); font-size: 14.5px; margin-top: 10px; }
 
