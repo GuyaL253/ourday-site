@@ -32,7 +32,7 @@
       --rose: #c98a8a;
       --rose-deep: #934e53;
       --rose-tint: #f7e9e7;
-      --gold: #c9a24b;          /* decorative only (flourish line, borders, dots) */
+      --gold: #c9a24b;          /* decorative only (flourish line, borders) */
       --gold-text: #8a6c29;     /* gold for text/symbols — meets 4.5:1 on white/cream */
       --gold-soft: #e8d5a8;
       --line: #eadfd6;
@@ -137,7 +137,7 @@
     .store-btn .small { display: block; font-size: 11.5px; opacity: 0.85; }
     .store-btn .big { display: block; font-size: 18px; font-weight: 700; }
     .hero-note { margin-top: 16px; font-size: 13.5px; color: var(--brown-soft); }
-    .hero-note .dot { color: var(--gold); margin: 0 6px; }
+    .hero-note .dot { color: var(--gold-text); margin: 0 6px; }
 
     /* Sections */
     section { padding: 64px 0; }
@@ -247,7 +247,7 @@
     .contact-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .btn-outline {
       display: inline-block; padding: 10px 22px; border-radius: 999px; text-decoration: none;
-      border: 1.5px solid var(--rose); color: var(--rose-deep); font-weight: 600; font-size: 14.5px;
+      border: 1.5px solid var(--rose-deep); color: var(--rose-deep); font-weight: 600; font-size: 14.5px;
     }
     .btn-fill {
       display: inline-block; padding: 10px 22px; border-radius: 999px; text-decoration: none;
@@ -308,7 +308,7 @@
         באפליקציה אחת נקייה ופשוטה, בעברית מלאה ומימין לשמאל.
       </p>
       <!-- 2. App Store CTA -->
-      <a class="store-btn" href="https://apps.apple.com/il/app/our-day/id6779339041" aria-label="הורדת Our Day מה-App Store">
+      <a class="store-btn" href="https://apps.apple.com/il/app/our-day/id6779339041">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
         </svg>
@@ -448,7 +448,7 @@
           ואינם נגישים למפתח. בגרסה הנוכחית האפליקציה לא אוספת נתוני שימוש או אנליטיקה,
           ואין בה פרסומות.
         </p>
-        <a class="link" href="privacy-he.html">לקריאת מדיניות הפרטיות המלאה ←</a>
+        <a class="link" href="privacy-he.html">לקריאת מדיניות הפרטיות המלאה<span aria-hidden="true"> ←</span></a>
       </div>
     </div>
   </section>
@@ -509,7 +509,7 @@
       <div class="flourish"></div>
       <h2>היום הגדול מתקרב. תתחילו לתכנן בראש שקט.</h2>
       <p>הורידו את Our Day והתחילו לתכנן בראש שקט — עם צ׳קליסט מוכן לחתונה ישראלית.</p>
-      <a class="store-btn" href="https://apps.apple.com/il/app/our-day/id6779339041" aria-label="הורדת Our Day מה-App Store">
+      <a class="store-btn" href="https://apps.apple.com/il/app/our-day/id6779339041">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
         </svg>
@@ -527,7 +527,7 @@
   <div class="wrap foot">
     <p class="foot-tagline">Our Day · אפליקציית תכנון חתונה בעברית</p>
     <span class="copy">© 2026 Our Day · ourday.co.il</span>
-    <nav class="foot-links" aria-label="קישורים משפטיים">
+    <nav class="foot-links" aria-label="קישורים נוספים">
       <a href="privacy-he.html">מדיניות פרטיות</a>
       <a href="accessibility.html">הצהרת נגישות</a>
       <a href="support-he.html">תמיכה</a>

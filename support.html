@@ -45,7 +45,7 @@
       padding: 14px 16px;
       margin-bottom: 10px;
     }
-    .faq-q { font-weight: 700; color: #4a2a10; margin-bottom: 5px; }
+    .faq-q { font-weight: 700; color: #4a2a10; margin-bottom: 5px; font-size: 1em; }
     .faq-a { color: #3a2010; margin: 0; }
     .contact-box {
       background: #fdf3ec;
@@ -65,6 +65,7 @@
       margin-top: 10px;
     }
     hr { border: none; border-top: 1px solid #f0e8df; margin: 28px 0 0; }
+    :focus-visible { outline: 3px solid #5c4033; outline-offset: 2px; border-radius: 4px; }
     @media (max-width: 480px) { .card { padding: 24px 18px; } }
   </style>
 </head>
@@ -72,7 +73,7 @@
   <main class="card">
     <h1>Support — Our Day</h1>
     <span class="muted">Last updated: June 2026</span>
-    <p style="font-size: 13.5px; margin-bottom: 24px;"><a href="support-he.html" lang="he" dir="rtl">← לקריאת עמוד התמיכה בעברית</a></p>
+    <p style="font-size: 13.5px; margin-bottom: 24px;"><a href="support-he.html" lang="he" dir="rtl"><span aria-hidden="true">← </span>לקריאת עמוד התמיכה בעברית</a></p>
 
     <div class="intro">
       Welcome to Our Day support. Find answers to common questions below, or contact us directly by email.
@@ -103,17 +104,17 @@
     <h2>3. Sign In</h2>
 
     <div class="faq">
-      <div class="faq-q">How do I sign in to the app?</div>
+      <h3 class="faq-q">How do I sign in to the app?</h3>
       <p class="faq-a">Our Day uses <strong>Sign in with Apple</strong> only — no separate username or password is needed. Make sure you are signed into iCloud on your device.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">I switched devices — will my data be there?</div>
+      <h3 class="faq-q">I switched devices — will my data be there?</h3>
       <p class="faq-a">Yes. Sign in with the same Apple ID and your data will sync automatically from iCloud.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">I deleted and reinstalled the app — is my data still there?</div>
+      <h3 class="faq-q">I deleted and reinstalled the app — is my data still there?</h3>
       <p class="faq-a">Yes. Your data is stored in iCloud, not on the device. Sign in with the same Apple ID to restore everything.</p>
     </div>
 
@@ -123,12 +124,12 @@
     <h2>4. iCloud Sync</h2>
 
     <div class="faq">
-      <div class="faq-q">My data isn't syncing between devices — what should I do?</div>
+      <h3 class="faq-q">My data isn't syncing between devices — what should I do?</h3>
       <p class="faq-a">The app uses CloudKit (iCloud) for sync. Check that iCloud is enabled: Settings → [Your Name] → iCloud → Our Day. Make sure you have an internet connection. Sync may take a few minutes after changes.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">The app shows an iCloud error — what should I do?</div>
+      <h3 class="faq-q">The app shows an iCloud error — what should I do?</h3>
       <p class="faq-a">Make sure you are signed into an active iCloud account. Force-close the app and reopen it. If the issue persists, try: Settings → [Your Name] → iCloud → Sync This iPhone.</p>
     </div>
 
@@ -138,17 +139,17 @@
     <h2>5. Data Import and Export</h2>
 
     <div class="faq">
-      <div class="faq-q">How do I export a backup?</div>
+      <h3 class="faq-q">How do I export a backup?</h3>
       <p class="faq-a">Go to <strong>More → Export Data</strong>. You can download a full JSON file of all your wedding data.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">How do I import or export guests as CSV?</div>
+      <h3 class="faq-q">How do I import or export guests as CSV?</h3>
       <p class="faq-a">CSV export and import are available from the guest list screen. CSV import lets you add guests from an existing spreadsheet in the supported format.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">I deleted my account — are my exported files deleted too?</div>
+      <h3 class="faq-q">I deleted my account — are my exported files deleted too?</h3>
       <p class="faq-a">No. Deleting your account removes data from the app and iCloud, but <strong>does not affect files you have already exported and shared</strong>. Those files are entirely under your control — store them securely.</p>
     </div>
 
@@ -158,12 +159,12 @@
     <h2>6. Account Deletion</h2>
 
     <div class="faq">
-      <div class="faq-q">How do I delete my account?</div>
+      <h3 class="faq-q">How do I delete my account?</h3>
       <p class="faq-a">Go to <strong>More → Delete Account</strong>. This permanently deletes all your wedding data from the app and from iCloud. This action cannot be undone.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">Is deletion immediate?</div>
+      <h3 class="faq-q">Is deletion immediate?</h3>
       <p class="faq-a">Deletion begins immediately on your device. Propagation to iCloud servers happens automatically and may take additional time depending on your internet connection. Exported files you have already shared are not affected.</p>
     </div>
 
@@ -173,22 +174,22 @@
     <h2>7. WhatsApp Guest Invitations</h2>
 
     <div class="faq">
-      <div class="faq-q">Does the app send WhatsApp messages automatically?</div>
+      <h3 class="faq-q">Does the app send WhatsApp messages automatically?</h3>
       <p class="faq-a">No. When you choose to send an invitation to a guest, the app opens WhatsApp with a suggested pre-filled message for that one guest. <strong>You must press Send yourself</strong> inside WhatsApp. The app does not send any message without your action.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">What happens to the guest's phone number when I send a WhatsApp invitation?</div>
+      <h3 class="faq-q">What happens to the guest's phone number when I send a WhatsApp invitation?</h3>
       <p class="faq-a">The phone number and message text are passed to WhatsApp / Meta as part of opening the <code>wa.me</code> link — the same as any standard WhatsApp link. They do not pass through any developer server and we have no access to them.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">What does "invitation sent" mean on a guest?</div>
+      <h3 class="faq-q">What does "invitation sent" mean on a guest?</h3>
       <p class="faq-a">It is a planning flag only — it helps you track which guests have been contacted. It is stored privately in your iCloud data and can be changed manually at any time. It is not a delivery confirmation.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">WhatsApp options don't appear for a guest — why?</div>
+      <h3 class="faq-q">WhatsApp options don't appear for a guest — why?</h3>
       <p class="faq-a">WhatsApp invitations require an Israeli phone number in a supported format (+972 / 05x). Make sure the guest's phone number is entered in Israeli format.</p>
     </div>
 
@@ -198,7 +199,7 @@
     <h2>8. Partner Sharing</h2>
 
     <div class="faq">
-      <div class="faq-q">Can I share the wedding with my partner?</div>
+      <h3 class="faq-q">Can I share the wedding with my partner?</h3>
       <p class="faq-a">Partner sharing is <strong>not available in version 1.0</strong>. It is planned for a future update. We will announce when it becomes available.</p>
     </div>
 
@@ -208,21 +209,21 @@
     <h2>9. Privacy</h2>
 
     <div class="faq">
-      <div class="faq-q">Is my data safe?</div>
+      <h3 class="faq-q">Is my data safe?</h3>
       <p class="faq-a">Yes. All your wedding data is stored in your private iCloud database only. The developer has no access to your content — guest names, vendor details, photos, and budget data are stored in your private cloud only.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">Does the app collect analytics or usage data?</div>
+      <h3 class="faq-q">Does the app collect analytics or usage data?</h3>
       <p class="faq-a">No. In the current version (v1.0), the app does not collect usage metrics, analytics, or any performance data. There are no advertising SDKs and no behavioral tracking.</p>
     </div>
 
     <div class="faq">
-      <div class="faq-q">How do I submit a data access, correction, or deletion request?</div>
+      <h3 class="faq-q">How do I submit a data access, correction, or deletion request?</h3>
       <p class="faq-a">Email us at <a href="mailto:support@ourday.co.il">support@ourday.co.il</a>. Privacy-related requests will be handled within 30 business days. You can also delete all your data directly from the app via More → Delete Account.</p>
     </div>
 
-    <p style="margin-top: 14px;"><a href="privacy.html">→ Full Privacy Policy</a></p>
+    <p style="margin-top: 14px;"><a href="privacy.html"><span aria-hidden="true">→ </span>Full Privacy Policy</a></p>
 
     <hr>
 
@@ -233,7 +234,7 @@
     </div>
 
     <hr>
-    <p style="margin-top: 24px;"><a href="accessibility.html">הצהרת נגישות</a> · <a href="index.html">ourday.co.il</a></p>
+    <p style="margin-top: 24px;"><a href="accessibility.html" lang="he" dir="rtl">הצהרת נגישות</a> · <a href="index.html">ourday.co.il</a></p>
 
   </main>
 </body>
